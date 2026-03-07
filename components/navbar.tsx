@@ -2,8 +2,9 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, User, Package, Truck } from "lucide-react";
+import { Menu, X, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import gsap from "gsap";
 
@@ -69,12 +70,16 @@ export function Navbar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
           {/* Logo */}
-          <div ref={logoRef} className="flex items-center gap-2">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg" style={{ backgroundColor: "#FF7A00" }}>
-                <Truck className="h-6 w-6 text-white" />
-              </div>
-              <span className="text-xl font-bold text-white">RouteShipper</span>
+          <div ref={logoRef} className="flex items-center">
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/images/routeshipper-logo.png"
+                alt="RouteShipper Global Logistics"
+                width={180}
+                height={50}
+                className="h-12 w-auto object-contain"
+                priority
+              />
             </Link>
           </div>
 

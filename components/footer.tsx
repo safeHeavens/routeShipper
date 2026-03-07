@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Truck, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import Image from "next/image";
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const footerLinks = {
   services: [
@@ -39,11 +40,14 @@ export function Footer() {
         <div className="grid gap-8 lg:grid-cols-5">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg" style={{ backgroundColor: "#FF7A00" }}>
-                <Truck className="h-6 w-6 text-white" />
-              </div>
-              <span className="text-xl font-bold">RouteShipper</span>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/images/routeshipper-logo.png"
+                alt="RouteShipper Global Logistics"
+                width={180}
+                height={50}
+                className="h-12 w-auto object-contain"
+              />
             </Link>
             <p className="mt-4 max-w-xs text-sm text-gray-300">
               Global logistics solutions for businesses of all sizes. Fast, reliable, and secure shipping worldwide.

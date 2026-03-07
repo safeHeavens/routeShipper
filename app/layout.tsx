@@ -1,11 +1,15 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import './globals.css'
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const montserrat = Montserrat({ 
+  subsets: ["latin"], 
+  variable: "--font-montserrat",
+  weight: ["300", "400", "500", "600", "700", "800", "900"]
+});
 
 export const metadata: Metadata = {
   title: 'RouteShipper Global Logistics | Fast & Reliable Shipping',
@@ -43,7 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${montserrat.variable} font-sans antialiased`}>
         <Navbar />
         <main className="min-h-screen">
           {children}
