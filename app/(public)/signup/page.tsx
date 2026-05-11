@@ -96,7 +96,7 @@ export default function SignupPage() {
       <div className="w-full max-w-5xl grid lg:grid-cols-2 gap-8 items-center">
         {/* Benefits Section */}
         <div className="benefits-section hidden lg:block text-white">
-          <Link href="/" className="inline-flex items-center gap-2 mb-8">
+          <Link href="/RouteShipper-logistics-platform/app/public" className="inline-flex items-center gap-2 mb-8">
             <div
               className="flex h-12 w-12 items-center justify-center rounded-lg"
               style={{ backgroundColor: "#FF7A00" }}
@@ -127,7 +127,7 @@ export default function SignupPage() {
         {/* Signup Form */}
         <Card className="signup-card border-0 shadow-2xl">
           <CardHeader className="text-center pb-0 lg:hidden">
-            <Link href="/" className="inline-flex items-center justify-center gap-2 mb-4">
+            <Link href="/RouteShipper-logistics-platform/app/public" className="inline-flex items-center justify-center gap-2 mb-4">
               <div
                 className="flex h-10 w-10 items-center justify-center rounded-lg"
                 style={{ backgroundColor: "#FF7A00" }}

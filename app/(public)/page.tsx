@@ -414,7 +414,7 @@ export default function HomePage() {
   return (
     <div className="overflow-hidden">
       {/* Hero Section with Background Image */}
-      <section ref={heroRef} className="relative min-h-[90vh] flex items-center">
+      <section ref={heroRef} className="relative min-h-[90vh] flex items-center ">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
@@ -435,7 +435,7 @@ export default function HomePage() {
           <div className="absolute bottom-20 left-20 h-80 w-80 rounded-full bg-[#1F77FF]/15 blur-[120px] animate-pulse" style={{ animationDelay: "1s" }} />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+        <div className="relative w-full mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
           <div className="max-w-3xl">
             {/* Badge */}
             <div className="hero-badge inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 mb-8">
@@ -500,7 +500,7 @@ export default function HomePage() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="hidden absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <div className="w-8 h-12 rounded-full border-2 border-white/30 flex items-start justify-center pt-2">
             <div className="w-1.5 h-3 rounded-full bg-white/60 animate-pulse" />
           </div>

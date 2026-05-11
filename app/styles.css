@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+/*@tailwind utilities;*/
+
+:root {
+    --background: #FFFFFF;
+    --foreground: #0B1E4A;
+    --card: #FFFFFF;
+    --card-foreground: #0B1E4A;
+    --popover: #FFFFFF;
+    --popover-foreground: #0B1E4A;
+    --primary: #FF7A00;
+    --primary-foreground: #FFFFFF;
+    --secondary: #0B1E4A;
+    --secondary-foreground: #FFFFFF;
+    --muted: #F4F6F9;
+    --muted-foreground: #64748B;
+    --accent: #1F77FF;
+    --accent-foreground: #FFFFFF;
+    --destructive: #EF4444;
+    --destructive-foreground: #FFFFFF;
+    --border: #E2E8F0;
+    --input: #E2E8F0;
+    --ring: #1F77FF;
+    --radius: 0.5rem;
+
+    --navy: #0B1E4A;
+    --orange: #FF7A00;
+    --sky-blue: #1F77FF;
+}
+
+.dark {
+    --background: #0B1E4A;
+    --foreground: #FFFFFF;
+    --card: #0F2557;
+    --card-foreground: #FFFFFF;
+    --popover: #0F2557;
+    --popover-foreground: #FFFFFF;
+    --primary: #FF7A00;
+    --primary-foreground: #FFFFFF;
+    --secondary: #1E3A5F;
+    --secondary-foreground: #FFFFFF;
+    --muted: #1E3A5F;
+    --muted-foreground: #94A3B8;
+    --accent: #1F77FF;
+    --accent-foreground: #FFFFFF;
+    --destructive: #EF4444;
+    --destructive-foreground: #FFFFFF;
+    --border: #1E3A5F;
+    --input: #1E3A5F;
+    --ring: #1F77FF;
+}
+
+@layer base {
+    * {
+        @apply border-border outline-ring;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+.cell-custom {
+    --cell-size: 2rem;
+}

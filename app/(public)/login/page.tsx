@@ -52,7 +52,7 @@ export default function LoginPage() {
     <div className="min-h-[calc(100vh-80px)] flex items-center justify-center bg-gradient-to-br from-[#0B1E4A] to-[#1E3A5F] py-12 px-4">
       <Card ref={cardRef} className="w-full max-w-md border-0 shadow-2xl">
         <CardHeader className="text-center pb-0">
-          <Link href="/" className="inline-flex items-center justify-center gap-2 mb-6">
+          <Link href="/RouteShipper-logistics-platform/app/public" className="inline-flex items-center justify-center gap-2 mb-6">
             <div
               className="flex h-12 w-12 items-center justify-center rounded-lg"
               style={{ backgroundColor: "#FF7A00" }}
