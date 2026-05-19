@@ -84,7 +84,7 @@ export function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div ref={menuItemsRef} className="hidden -lg:flex lg:items-center lg:gap-8">
+          <div ref={menuItemsRef} className="hidden lg:flex lg:items-center lg:gap-8">
             {navItems.map((item) => (
               <Link
                 key={item.href}
