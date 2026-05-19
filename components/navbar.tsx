@@ -102,7 +102,7 @@ export function Navbar() {
           </div>
 
           {/* Right Side - Auth Buttons */}
-          <div className="hidden lg:flex lg:items-center lg:gap-4">
+          <div className="hidden lg:hidden lg:items-center lg:gap-4">
             <Link href="/login">
               <Button variant="ghost" className="text-white hover:text-[#1F77FF] hover:bg-white/10">
                 Login
@@ -145,7 +145,7 @@ export function Navbar() {
                   {item.label}
                 </Link>
               ))}
-              <div className="flex flex-col gap-2 pt-4 border-t border-white/10">
+              <div className="hidden flex-col gap-2 pt-4 border-t border-white/10">
                 <Link href="/login" onClick={() => setIsOpen(false)}>
                   <Button variant="ghost" className="w-full text-white hover:bg-white/10">
                     Login
