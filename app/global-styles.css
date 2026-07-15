@@ -21,3 +21,12 @@
         @apply bg-background text-foreground;
     }
 }
+
+@keyframes pulse-slide {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(300%); }
+}
+
+.animate-pulse-slide {
+    animation: pulse-slide 2s linear infinite;
+}

@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Loader2, AlertCircle, CheckCircle2 } from "lucide-react";
+import Image from "next/image";
 
 export default function AdminLogin() {
     const [email, setEmail] = useState("");
@@ -47,13 +48,19 @@ export default function AdminLogin() {
         <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#0B1E4A] p-4">
 
             {/* 1. Logo at the top */}
-            <div className="mb-8 flex items-center gap-2 text-white font-bold text-3xl">
-                <ShieldCheck className="h-10 w-10 text-[#FF7A00]" />
-                <span>ROUTE<span className="text-[#FF7A00]">SHIPPER</span></span>
+            <div className="mb-2 flex items-center">
+                <Image
+                    src="/images/trans-logo.png"
+                    alt="LavtradePro Shipments"
+                    width={180}
+                    height={80}
+                    priority
+                    className="h-auto w-[180px] lg:w-[180px] -ml-6"
+                />
             </div>
 
             {/* 2. Login Form */}
-            <Card className="w-full max-w-md border-0 shadow-2xl bg-white overflow-hidden">
+            <Card className="w-full max-w-md border-0 shadow-2xl bg-white">
                 <CardContent className="pt-8">
                     <div className="mb-6 text-center">
                         <h1 className="text-xl font-bold text-[#0B1E4A]">Admin Access</h1>
@@ -82,7 +89,7 @@ export default function AdminLogin() {
                             <Input
                                 type="email"
                                 placeholder="admin@routeshipper.com"
-                                className="h-12 border-gray-200 focus:border-[#FF7A00] focus:ring-[#FF7A00]"
+                                className="h-12 border-gray-200 focus:border-[#FF4500] focus:ring-[#FF7A00]"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required
@@ -92,7 +99,7 @@ export default function AdminLogin() {
                             <label className="text-sm font-medium text-gray-700">Password</label>
                             <Input
                                 type="password"
-                                className="h-12 border-gray-200 focus:border-[#FF7A00] focus:ring-[#FF7A00]"
+                                className="h-12 border-gray-200 focus:border-[#FF4500] focus:ring-[#FF7A00]"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 required
@@ -100,7 +107,7 @@ export default function AdminLogin() {
                         </div>
                         <Button
                             type="submit"
-                            className="w-full h-12 bg-[#FF7A00] hover:bg-[#E66E00] text-lg font-semibold transition-all duration-200"
+                            className="w-full h-12 bg-[#FF4500] hover:bg-[#E66E00] text-lg font-semibold transition-all duration-200"
                             disabled={loading}
                         >
                             {loading ? (

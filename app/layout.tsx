@@ -1,28 +1,28 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'RouteShipper',
+  title: 'Lavtradepro Shipments',
   description:
-    'RouteShipper powers global commerce with efficient freight, logistics, and delivery solutions trusted by businesses worldwide.',
+    'LavtradePro Shipments provides fast, secure, and reliable global logistics, freight forwarding, cargo transportation, and delivery solutions, connecting businesses and customers across the world with seamless shipping services.\n',
 
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/shortcut-icon.png',
-    apple: '/apple-touch-icon.png',
+    icon: '/lav-.ico',
+    shortcut: '/lav-.jpg',
+    apple: '/lav-.jpg',
   },
 
   openGraph: {
-    title: 'RouteShipper',
+    title: 'Lavtradepro Shipments',
     description:
-      'RouteShipper powers global commerce with efficient freight, logistics, and delivery solutions trusted by businesses worldwide.',
-    url: 'https://routshipper.com',
-    siteName: 'RouteShipper',
+      'LavtradePro Shipments provides fast, secure, and reliable global logistics, freight forwarding, cargo transportation, and delivery solutions, connecting businesses and customers across the world with seamless shipping services.\n',
+    url: 'https://lavtradeproshipments.com',
+    siteName: 'Lavtradepro Shipments',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/images/hero-bg-jet.png',
         width: 1200,
         height: 630,
-        alt: 'RouteShipper Global Logistics Platform',
+        alt: 'Lavtradepro Shipments and Global Logistics Platform',
       },
     ],
     locale: 'en_US',
@@ -31,10 +31,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'RouteShipper',
+    title: 'Lavtradepro Shipments',
     description:
-      'RouteShipper powers global commerce with efficient freight, logistics, and delivery solutions trusted by businesses worldwide.',
-    images: ['/og-image.jpg'],
+      'LavtradePro Shipments provides fast, secure, and reliable global logistics, freight forwarding, cargo transportation, and delivery solutions, connecting businesses and customers across the world with seamless shipping services.\n',
+    images: ['/images/hero-bg-jet.png'],
   },
 }
 

@@ -13,8 +13,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'RouteShipper Global Logistics | Fast & Reliable Shipping',
-  description: 'RouteShipper provides world-class logistics solutions including air freight, ocean freight, ground delivery, and warehousing services worldwide.',
+  title: 'LavtradePro Shipemnts and Global Logistics | Fast & Reliable Shipping',
+  description: 'LavtradePro provides world-class logistics solutions including air freight, ocean freight, ground delivery, and warehousing services worldwide.',
   keywords: ['logistics', 'shipping', 'freight', 'delivery', 'warehousing', 'international shipping'],
   icons: {
     icon: [
@@ -62,7 +62,7 @@ export default function RootLayout({
         <Script id="smartsupp-chat" strategy="afterInteractive">
           {`
             var _smartsupp = _smartsupp || {};
-            _smartsupp.key = '65541a63715f84b5882f4d9938081010e528bfc3';
+            _smartsupp.key = '';
 
             window.smartsupp || (function(d) {
               var s, c, o = smartsupp = function() { o._.push(arguments) };

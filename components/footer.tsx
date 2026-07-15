@@ -36,17 +36,18 @@ const socialLinks = [
 export function Footer() {
   return (
     <footer style={{ backgroundColor: "#0B1E4A" }} className="text-white">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+      <div className="mx-auto max-w-7xl px-6 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="grid gap-8 lg:grid-cols-5">
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center">
               <Image
-                src="/images/routeshipper-logo.png"
-                alt="RouteShipper Global Logistics"
-                width={180}
-                height={50}
-                className="h-12 w-auto object-contain"
+                  src="/images/trans-logo.png"
+                  alt="LavtradePro Shipments"
+                  width={120}
+                  height={60}
+                  priority
+                  className="h-auto w-[120px] lg:w-[120px] -mb-2 -ml-2"
               />
             </Link>
             <p className="mt-4 max-w-xs text-sm text-gray-300">
@@ -110,8 +111,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 shrink-0 text-[#1F77FF]" />
-                <a href="mailto:info@routeshipper.com" className="text-sm text-gray-300 hover:text-[#1F77FF]">
-                  info@routeshipper.com
+                <a href="mailto:logistics@lavtradeproshipments.com" className="text-sm text-gray-300 hover:text-[#1F77FF]">
+                  logistics@lavtradeproshipments.com
                 </a>
               </li>
             </ul>
@@ -122,7 +123,7 @@ export function Footer() {
         <div className="mt-12 border-t border-white/10 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-sm text-gray-400">
-              &copy; {new Date().getFullYear()} RouteShipper Global Logistics. All rights reserved.
+              &copy; {new Date().getFullYear()} LavtradePro Shipments and Global Logistics. All rights reserved.
             </p>
             <div className="flex gap-6">
               <Link href="/privacy" className="text-sm text-gray-400 hover:text-[#1F77FF]">

@@ -47,7 +47,7 @@ export default function NewShipment() {
         for (let i = 0; i < 2; i++) part2 += alpha.charAt(Math.floor(Math.random() * alpha.length));
         let part3 = "";
         for (let i = 0; i < 1; i++) part3 += nums.charAt(Math.floor(Math.random() * nums.length));
-        return `RS${part1}${part2}${part3}`;
+        return `LPS${part1}${part2}${part3}`;
     };
 
     const [form, setForm] = useState({
